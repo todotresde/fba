@@ -1,0 +1,24 @@
+int cantidad = 10;
+int [] posXs = new int [cantidad];
+int dir = 1;
+int tam = 50;
+
+void setup(){
+  size(400, 400);
+  textSize(20);
+}
+
+void draw(){
+  background(200);
+  for(int i=0; i < cantidad; i++){
+    text(i + ":" + posXs[i], width/2, i * tam + tam/2);
+    
+    rect(posXs[i], i * tam, tam, tam);
+    
+    if(posXs[i] > width-tam || posXs[i] < 0){
+      dir = dir * -1;
+    }
+    
+    posXs[i] += dir;
+  }
+}
