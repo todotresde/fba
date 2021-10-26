@@ -14,7 +14,7 @@ class Tanque{
   
   void teclaPresionada(){
     if(keyCode == UP){
-      this.mapa.subir(this);
+      this.mapa.subirDesde(this.posX, this.posY);
     }
   }
 }

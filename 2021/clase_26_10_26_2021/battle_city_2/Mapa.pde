@@ -37,13 +37,40 @@ class Mapa{
     }
   }
   
-  void subirDesde(int posX, int posY){
+  void subirContenidoCeldaDesde(int posX, int posY){
     int i = floor(map(posX, 0, width, 0, cantCeldas));
     int j = floor(map(posY, 0, width, 0, cantCeldas));
-    println(posX + " " + posY + " " + i + " - " + j);
     if(this.celdas[i][j-1].estaVacia()){
       this.celdas[i][j-1].asignar(this.celdas[i][j]);
-      //this.celdas[i][j].vaciar();
+      this.celdas[i][j].vaciar();
+    }
+  }
+  
+  void bajarContenidoCeldaDesde(int posX, int posY){
+    int i = floor(map(posX, 0, width, 0, cantCeldas));
+    int j = floor(map(posY, 0, width, 0, cantCeldas));
+    if(this.celdas[i][j+1].estaVacia()){
+      this.celdas[i][j+1].asignar(this.celdas[i][j]);
+      this.celdas[i][j].vaciar();
+    }
+  }
+  
+  void derechaContenidoCeldaDesde(int posX, int posY){
+    int i = floor(map(posX, 0, width, 0, cantCeldas));
+    int j = floor(map(posY, 0, width, 0, cantCeldas));
+    
+    if(this.celdas[i+1][j].estaVacia()){
+      this.celdas[i+1][j].asignar(this.celdas[i][j]);
+      this.celdas[i][j].vaciar();
+    }
+  }
+  
+  void izquierdaContenidoCeldaDesde(int posX, int posY){
+    int i = floor(map(posX, 0, width, 0, cantCeldas));
+    int j = floor(map(posY, 0, width, 0, cantCeldas));
+    if(this.celdas[i-1][j].estaVacia()){
+      this.celdas[i-1][j].asignar(this.celdas[i][j]);
+      this.celdas[i][j].vaciar();
     }
   }
   

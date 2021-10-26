@@ -27,12 +27,17 @@ class Celda{
     else{
       fill(200);
       rect(this.posX, this.posY, this.tamCelda, this.tamCelda);
+      fill(0);
+      textSize(8);
+      text(this.posX + "-" + this.posY, this.posX, this.posY + this.tamCelda);
     }
   }
   
   void teclaPresionada(){
-    if(this.tanque != null)
+    if(this.tanque != null){
+      println(this.posX + "-" + this.tanque.posX);
       this.tanque.teclaPresionada();
+    }
   }
   
   void agregarTanque(Tanque tanque){
@@ -71,7 +76,7 @@ class Celda{
   }
   
   void asignar(Celda celda){
-    this.tanque = celda.tanque;
+    this.agregarTanque(celda.tanque);
     this.tanqueEnemigo = celda.tanqueEnemigo;
     this.paredLadrillo = celda.paredLadrillo;
     this.paredAcero = celda.paredAcero;
