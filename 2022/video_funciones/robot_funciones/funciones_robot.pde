@@ -6,6 +6,9 @@ int radio = 45;
 int cuelloPosY = posY - altoCuerpo - altoCuello - radio; // posY del cuello
 
 void dibujarRobot() {
+  strokeWeight(2);
+  ellipseMode(RADIUS);
+  
   cuelloPosY = posY - altoCuerpo - altoCuello - radio;
   // Cuello
   dibujarCuello();
