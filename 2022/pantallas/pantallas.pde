@@ -15,6 +15,12 @@ void draw() {
     text("Pantalla " + pantalla, 100, 200);
     fill(100);
     ellipse(100, 100, 50, 50);
+    
+    if (dist(mouseX, mouseY, 100, 100) < 25) {
+      cursor(HAND);
+    }else{
+      cursor(ARROW);
+    }
   } else if (pantalla == 3) {
     fill(0, 0, 255);
     text("Pantalla " + pantalla, 100, 200);
