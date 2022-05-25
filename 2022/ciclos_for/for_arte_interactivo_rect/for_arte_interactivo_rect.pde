@@ -16,13 +16,15 @@ void draw() {
     }
     rect(i*tam, 0, tam, height);
   }
-  rectMode(CORNERS);
+  rectMode(CENTER);
   for (int i=0; i<cant; i++) {
     if (i%2==0) {
       fill(0);
     } else {
       fill(255);
     }
-    rect(0, 0, mouseX - (i*tam), mouseY - (i*tam));
+    int tamX = mouseX - (i*tam) > 0 ? mouseX - (i*tam) : 0;
+    int tamY = mouseY - (i*tam) > 0 ? mouseY - (i*tam) : 0;
+    rect(mouseX/2, mouseY/2, tamX, tamY);
   }
 }
