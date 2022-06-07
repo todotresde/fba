@@ -4,6 +4,7 @@ int angulo = 0;
 
 void setup(){
   size(400, 400);
+  textSize(30);
 }
 
 void draw(){
@@ -12,6 +13,7 @@ void draw(){
   rotate(radians(angulo));
   dibujarMiraEn(0,0);
   dibujarRectEn(0,0);
+  text("Ang: " + angulo, -100, -100);
   angulo++;
 }
 

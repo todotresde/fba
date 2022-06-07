@@ -2,13 +2,16 @@ int angulo = 0;
 
 void setup(){
   size(400, 400);
+  textSize(40);
 }
 
 void draw(){
   background(200);
+  text("Ang: " + angulo, 100, 100);
   rotate(radians(angulo));
+  text("Ang: " + angulo, 100, 100);
   dibujarMiraEn(0,0);
-  dibujarRectEnCentroPantalla(width/2, height/2);
+  dibujarRectEn(width/2, height/2);
   dibujarRectContornoPantalla();
 }
 
@@ -19,7 +22,7 @@ void dibujarMiraEn(int posX, int posY){
   line(posX, posY-10, posX, posY+10);
 }
 
-void dibujarRectEnCentroPantalla(int posX, int posY){
+void dibujarRectEn(int posX, int posY){
   fill(255,0,0);
   rectMode(CENTER);
   rect(posX, posY, 50, 50);

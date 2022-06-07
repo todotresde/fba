@@ -9,7 +9,7 @@ void draw(){
   background(200);
   translate(posX, posY);
   dibujarMiraEn(0,0);
-  dibujarRectEnCentroPantalla(width/2, height/2);
+  dibujarRectEn(width/2, height/2);
   dibujarRectContornoPantalla();
 }
 
@@ -20,7 +20,7 @@ void dibujarMiraEn(int posX, int posY){
   line(posX, posY-10, posX, posY+10);
 }
 
-void dibujarRectEnCentroPantalla(int posX, int posY){
+void dibujarRectEn(int posX, int posY){
   fill(255,0,0);
   rectMode(CENTER);
   rect(posX, posY, 50, 50);
