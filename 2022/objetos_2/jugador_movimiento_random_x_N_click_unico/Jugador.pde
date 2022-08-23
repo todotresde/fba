@@ -20,6 +20,10 @@ class Jugador {
     calcularPosicion();
   }
 
+  boolean hiceClickEncima() {
+    return (dist(mouseX, mouseY, posX, posY) < tam);
+  }
+  
   void click() {
     if (dist(mouseX, mouseY, posX, posY) < tam) {
       arrancarOParar();

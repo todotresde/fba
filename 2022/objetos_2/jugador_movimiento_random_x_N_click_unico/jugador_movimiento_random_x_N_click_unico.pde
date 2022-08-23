@@ -1,8 +1,8 @@
 SerTodoPoderoso serTodoPoderoso;
-XXXXX
+
 void setup(){
   size(400, 400);
-  serTodoPoderoso = new SerTodoPoderoso();
+  serTodoPoderoso = new SerTodoPoderoso(100);
 }
 
 void draw(){

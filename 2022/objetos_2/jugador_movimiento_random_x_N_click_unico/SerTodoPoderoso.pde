@@ -1,8 +1,11 @@
 class SerTodoPoderoso {
-  int cant = 2000;
-  Jugador [] jugadores = new Jugador [cant];
+  int cant;
+  Jugador [] jugadores;
 
-  SerTodoPoderoso() {
+  SerTodoPoderoso(int cantJugadores) {
+    cant = cantJugadores;
+    jugadores = new Jugador [cant];
+    
     for (int i = 0; i < cant; i++) {
       jugadores[i] = new Jugador();
     }
@@ -15,8 +18,14 @@ class SerTodoPoderoso {
   }
 
   void click() {
+    int ultimoEnHacerClick = -1;
     for (int i = 0; i < cant; i++) {
-      jugadores[i].click();
+      if (jugadores[i].hiceClickEncima()) {
+        ultimoEnHacerClick = i;
+      }
+    }
+    if (ultimoEnHacerClick != -1) {
+      jugadores[ultimoEnHacerClick].arrancarOParar();
     }
   }
 }
