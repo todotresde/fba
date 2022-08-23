@@ -21,12 +21,12 @@ class Jugador {
   }
 
   void click() {
-    if (dist(mouseX, mouseY, posX, posY) < tam/2) {
-      arrancarOParar();
+    if (dist(mouseX, mouseY, posX, posY) < tam) {
+      arrancarODetenerse();
     }
   }
 
-  void arrancarOParar() {
+  void arrancarODetenerse() {
     if(movimiento){
       miColor = color(255, 0, 0);
       movimiento = false;

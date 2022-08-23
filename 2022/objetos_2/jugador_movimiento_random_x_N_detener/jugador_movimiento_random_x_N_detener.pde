@@ -1,4 +1,4 @@
-int cant = 20;
+int cant = 2000;
 Jugador [] jugadores = new Jugador [cant];
 
 void setup(){

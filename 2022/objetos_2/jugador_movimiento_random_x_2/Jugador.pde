@@ -20,7 +20,7 @@ class Jugador{
   }
   
   void click(){
-    if(dist(mouseX, mouseY, posX, posY) < tam/2){
+    if(dist(mouseX, mouseY, posX, posY) < tam){
       seleccionado();
     }
   }
