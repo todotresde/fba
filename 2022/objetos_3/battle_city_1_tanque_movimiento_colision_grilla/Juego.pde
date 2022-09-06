@@ -1,11 +1,11 @@
 class Juego {
-  int cantParedes = 12;
+  int cantParedes = 10;
   Tanque tanque;
   Pared [][] paredes = new Pared [cantParedes][cantParedes]; 
 
   Juego() {
-    int posX = round(map(7, 0, cantParedes, 0, width));
-    int posY = round(map(11, 0, cantParedes, 0, height));
+    int posX = round(map(6, 0, cantParedes, 0, width));
+    int posY = round(map(6, 0, cantParedes, 0, height));
     tanque = new Tanque(posX, posY, round(width/cantParedes), round(height/cantParedes));
 
     generarParedes();
@@ -35,6 +35,9 @@ class Juego {
         if (paredes[i][j] != null) {
           paredes[i][j].dibujar();
         }
+                noFill();
+        stroke(0, 255, 0);
+        rect(i * round(width/cantParedes), j * round(width/cantParedes), round(width/cantParedes), round(height/cantParedes));
       }
     }
   }
