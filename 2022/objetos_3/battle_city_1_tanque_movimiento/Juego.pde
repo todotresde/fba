@@ -45,8 +45,16 @@ class Juego{
   
   void teclaPresionada(){
     if(keyCode == RIGHT){
-      if(???????)
-        tanque.moverDerecha();
+      tanque.moverDerecha();
+    }
+    if(keyCode == LEFT){
+      tanque.moverIzquierda();
+    }
+    if(keyCode == UP){
+      tanque.moverArriba();
+    }
+    if(keyCode == DOWN){
+      tanque.moverAbajo();
     }
   }
 }

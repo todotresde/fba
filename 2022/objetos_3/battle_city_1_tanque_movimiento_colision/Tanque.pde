@@ -13,6 +13,7 @@ class Tanque{
   
   void dibujar(){
     image(img, posX, posY, ancho, alto);
+
   }
   
   void moverDerecha(){
@@ -29,5 +30,21 @@ class Tanque{
   
   void moverAbajo(){
     posY = posY + alto;
+  }
+  
+  int posicionALaDerecha(){
+    return posX + ancho;
+  }
+  
+  int posicionALaIzquierda(){
+    return posX - ancho;
+  }
+  
+  int posicionArriba(){
+    return posY - alto;
+  }
+  
+  int posicionAbajo(){
+    return posY + alto;
   }
 }
