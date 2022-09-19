@@ -27,5 +27,12 @@ class Tablero {
       }
     }
   }
-
+  
+  void mousePresionado() {
+    for (int i = 0; i < cantCasillas; i++) {
+      for (int j = 0; j < cantCasillas; j++) {
+        casillas[i][j].mousePresionado();
+      }
+    }
+  }
 }
