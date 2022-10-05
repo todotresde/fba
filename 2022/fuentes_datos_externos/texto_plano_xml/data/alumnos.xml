@@ -1,0 +1,6 @@
+<alumnos>
+ <alumno dni="45345345" nombre="Leo" apellido="Garay">
+ </alumno>
+ <alumno dni="234444" nombre="Maria" apellido="Salas">
+ </alumno>
+</alumnos>
