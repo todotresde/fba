@@ -10,8 +10,8 @@ void setup(){
 void draw(){
   background(200);
   
-  XML [] alumnos = archivoAlumnosXML.getChildren("alumnos");
-
+  XML [] alumnos = archivoAlumnosXML.getChildren("alumno");
+  
   for (int i = 0; i < alumnos.length; i++) {
     String dni = alumnos[i].getString("dni");
     String nombre = alumnos[i].getString("nombre");
