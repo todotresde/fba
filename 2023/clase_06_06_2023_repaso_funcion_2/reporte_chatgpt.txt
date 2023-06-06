@@ -1,0 +1,17 @@
+1. ¿Hay una presentación de diapositivas de imágenes? 
+Sí.
+
+2. ¿Muestra al menos 3 imágenes? 
+Sí.
+
+3. ¿Cada diapositiva muestra un texto con una especie de animación? 
+Sí.
+
+4. ¿Hay un botón en la última diapositiva? 
+Sí.
+
+5. ¿Tiene transiciones automáticas de imágenes? 
+Sí.
+
+6. ¿La resolución es de 640 por 480? 
+Sí.
