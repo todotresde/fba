@@ -1,6 +1,6 @@
 let mySound;
 function preload() {
-  soundFormats('mp3', 'ogg');
+  soundFormats('mp3');
   mySound = loadSound('data/bell');
 }
 
