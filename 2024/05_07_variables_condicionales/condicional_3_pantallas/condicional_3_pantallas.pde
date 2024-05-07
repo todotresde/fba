@@ -1,0 +1,29 @@
+int posX = 200;
+int pantalla = 1;
+
+void setup(){
+  size(400, 400);
+  textSize(20);
+}
+
+void draw(){
+  if(pantalla == 1){
+    background(0, 255, 0);
+    fill(255,50,20);
+    rect(200,200,50,50);
+    fill(0);
+    text("Pantalla 1", 100, 50);
+  }else if(pantalla == 2){
+    background(255, 0, 0);
+    fill(0);
+    text("Pantalla 2", 100, 50);
+  }else if(pantalla == 3){
+    background(0, 0, 255);
+    fill(0);
+    text("Pantalla 3", 100, 50);
+  }
+}
+
+void mouseClicked(){
+  pantalla = pantalla + 1;
+}
