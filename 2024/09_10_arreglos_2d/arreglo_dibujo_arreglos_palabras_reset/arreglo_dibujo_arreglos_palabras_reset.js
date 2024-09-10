@@ -25,6 +25,11 @@ function draw() {
   for(let i=0; i<cant; i+=1){
     text(palabras[i], i * ancho, altura[i]);
     altura[i] = altura[i] + velocidad[i];
+    
+    if(altura[i] > (height + 50)) {
+      altura[i] = random(-400,-100);
+      velocidad[i] = random(1,4);
+    }
   }
 }
 
