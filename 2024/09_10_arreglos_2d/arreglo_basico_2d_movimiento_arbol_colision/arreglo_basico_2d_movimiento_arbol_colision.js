@@ -20,6 +20,9 @@ function setup() {
   grilla[2][3] = 2;
   grilla[4][4] = 2;
   grilla[6][1] = 2;
+  //Asignación de casas
+  grilla[5][2] = 3;
+  grilla[8][8] = 3;
   
   print(grilla);
 }
@@ -30,30 +33,15 @@ function draw() {
   
   for(let i=0; i<cant; i+=1){
     for(let j=0; j<cant; j+=1){
-      if(grilla[i][j] === 1){
-        fill(0);
-      }else if(grilla[i][j] === 2){
-        fill(0,255,0);
-      }else{
-        fill(255);
-      }
-      rect(i*tam, j*tam, tam, tam);
+      dibujarCelda(i,j);
     }
   }
 }
 
 function keyPressed(){
-  grilla[posXPersonaje][posYPersonaje] = 0;
-  if (keyCode === LEFT_ARROW){
-    posXPersonaje--;
-  }else if (keyCode === RIGHT_ARROW){
-    posXPersonaje++;
-  }else if (keyCode === UP_ARROW){
-    posYPersonaje--;
-  }else if (keyCode === DOWN_ARROW){
-    posYPersonaje++;
+  if(sePuedeMoverElPersonaje()){
+    moverPersonaje();
   }
-  grilla[posXPersonaje][posYPersonaje] = 1;
 }
 
 function mousePressed(){
