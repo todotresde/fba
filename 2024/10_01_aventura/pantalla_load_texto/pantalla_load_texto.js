@@ -9,6 +9,7 @@ let posTextoActual = 0;
 function preload() {
   img1 = loadImage("data/img1.webp");
   misTextos = loadStrings('data/aventura.txt');
+  print(misTextos);
 }
 
 function setup() {
