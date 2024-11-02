@@ -2,7 +2,7 @@ let cantImgs = 10;
 let misImagenes = [];
 
 function preload() {
-  for(int=0;i<cant;i++){
+  for(let i=0;i<cant;i++){
     misImagenes[i] = loadImage("data/img"+i+".jpg");
   }
 }
