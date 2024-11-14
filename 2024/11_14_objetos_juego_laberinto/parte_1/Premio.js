@@ -1,0 +1,8 @@
+class Premio{
+  constructor(){
+  }
+  
+  dibujar(){
+    
+  }
+}

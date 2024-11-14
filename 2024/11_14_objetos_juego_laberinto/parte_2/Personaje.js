@@ -1,0 +1,8 @@
+class Personaje{
+  constructor(){
+  }
+  
+  dibujar(){
+    
+  }
+}

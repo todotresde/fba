@@ -1,0 +1,8 @@
+class Pared{
+  constructor(){
+  }
+  
+  dibujar(){
+    
+  }
+}
