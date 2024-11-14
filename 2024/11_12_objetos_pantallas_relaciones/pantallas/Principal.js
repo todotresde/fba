@@ -13,11 +13,12 @@ class Principal{
       this.pantallaInicio.pantallaCreditos();
     }else if(pantallaActiva === 3){
       this.juego.dibujar();
+      if(this.juego.gano()){
+        this.pantallaActiva = 5;
+      }
     }
     
-    if(this.juego.gano()){
-      this.pantallaActiva = 5;
-    }
+    
   }
   
   teclaPresionada(){
