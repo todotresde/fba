@@ -2,7 +2,7 @@ PImage miImagen;
 
 void setup(){
   size(400,400);
-  miImagen = loadImage("prueba.jpg");
+  miImagen = loadImage("tp1.jpg");
 }
 
 void draw(){
