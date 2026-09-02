@@ -43,6 +43,7 @@ function setup() {
   for (let i = 0; i < N; i++) {
     bloques.push(color((360 / N) * i, 80, 90));
   }
+  print(bloques);
 }
 
 function draw() {
