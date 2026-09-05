@@ -117,6 +117,7 @@ function setup() {
   agregarNube(90, 90, 0.4);
   agregarNube(320, 60, 0.25);
   agregarNube(480, 130, 0.5);
+  agregarNube(200, 200, 1);
 }
 
 function draw() {
